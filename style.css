@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .arrow {
+    margin: 5px;
+    font-size: 30px;
+  }
+  .Matched {
+    padding-left: 12px;
+    margin: 5px;
+    padding-top: 7px;
+    width: 35px;
+    height: 35px;
+    background: #ebf5fb;
+    border-radius: 70px;
+    position: relative;
+    left: 40px;
+    bottom: 35px;
+  }
+  .container {
+    border-bottom: 2px solid black;
+    height: 45px;
+  }
+  
+  .john-details {
+    position: relative;
+    left: 90px;
+    bottom: 74px;
+    font-size: 13px;
+  }
+  .wrap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .card {
+    max-width: 300px;
+    max-height: fit-content;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1.5%;
+  }
+  
+  .paid {
+    font-size: 15px;
+    padding-left: 200px;
+    
+  }
+  
+  ul li {
+    list-style-type: none;
+    font-size: 1em;
+  }
+  .align-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .align-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ammount {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  
+  .transaction-data {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
+  
+  button {
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 2px 15px;
+    border-radius: 4px;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+  }
+  .paynow:hover {
+    background: rgb(67, 138, 73);
+    color: white;
+  
+  }
+  .Declines:hover {
+    background: #dc3545;
+    color: white;
+    
+  }
+  
+  .date-time-left {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -20px;
+    padding-left: 20px;
+  }
+  .date-time-right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -20px;
+    padding-right: 20px;
+  }
+  
+  @media only screen and (max-width: 1280px) {
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .date-time-right {
+      top: 0px;
+    }
+    .date-time-left {
+      top: 0px;
+    }
+  }
+  
+  .card-date:before {
+    content: "";
+    display: block;
+    border-top: dotted 2px black;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .card-date p {
+    background: #fff;
+    padding: 20px 35px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+  }
+  .wrap {
+    margin-top: 15px;
+  }
+  .fa-check {
+    color: green;
+  }
